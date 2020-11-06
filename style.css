@@ -1,7 +1,53 @@
 body {
+  font-family: "Quicksand", sans-serif;
+  background-color: F8F7F6;
 }
 .header {
 }
 
 .footer {
+  background-color: 343449;
+}
+.grid1 {
+  display: grid;
+}
+
+.product-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-card {
+  padding: 1rem;
+  flex-grow: 1;
+  flex-basis: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.product-card img {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  width: 100%;
+  filter: hue-rotate(0deg);
+  transition: 300ms ease-in-out;
+}
+
+.product-card:hover img {
+  filter: hue-rotate(360deg);
+}
+
+.product-card a {
+  position: absolute;
+  bottom: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  text-align: center;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
 }

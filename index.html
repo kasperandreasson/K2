@@ -4,15 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page | Andréasson</title>
-        <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header"><h1>Andréasson</h1><aside>About us</aside><aside>Clothing</aside></header>
+    <header class="header" id="top">
+      <h1>Andréasson</h1>
+      <aside>
+        <a href="about.html">About us</a>
+        <a href="#clothing">Clothing</a>
+      </aside>
+    </header>
     <main>
-      <nav></nav>
+      <nav id="clothing" class="grid1">
+        <h1>Our Products</h1>
+
+        <div class="product-container">
+          <div class="product-card">
+            <img
+              src="clothing1.jfif"
+              alt="Bild på företagets klädesplagg (en tröja)"
+            />
+            <a href="cloth1.html">White Shirt</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="clothing2.jfif"
+              alt="Bild på företagets klädesplagg (en tröja)"
+            />
+            <a href="cloth2.html">Black Long Sleeved Shirt</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="clothing3.jfif"
+              alt="Bild på företagets klädesplagg (en tröja)"
+            />
+            <a href="cloth3.html">Lavender Shirt</a>
+          </div>
+        </div>
+      </nav>
     </main>
     <footer class="footer">
       <p>Copyright Andréasson Corperations</p>
+      <aside>
+        <a href="about.html">About us</a>
+        <a href="#top">Back to top</a>
+      </aside>
     </footer>
   </body>
 </html>
