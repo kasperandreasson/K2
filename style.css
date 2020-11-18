@@ -1,11 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bakgrundbild img {
+  width: 100%;
+  padding: 5rem;
+  border-radius: 10px;
+}
 body {
-  margin: 0%;
-  padding: 0%;
   font-family: "Roboto", sans-serif;
   background-color: white;
 }
 
-.bars {
+header {
+  height: 5rem;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -14,45 +23,52 @@ body {
   align-items: center;
 }
 
-.bars h1 {
+header h1 {
   grid-column: 2;
   color: black;
 }
 
-.bars aside {
-  grid-column: 3;
-  display: flex;
-  justify-content: space-evenly;
-}
-.bars aside a {
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px black;
+header a {
   text-align: center;
   padding: 0.5rem;
   color: black;
   text-decoration: none;
 }
+header a:hover {
+  background-color: antiquewhite;
+}
 footer {
-  background-color: black;
-}
-footer aside a {
-  color: white;
-}
-.bars p {
-  grid-column: 1;
-  color: white;
-}
-.grid1 {
   display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  padding: 1rem;
 }
-
+footer p {
+  grid-column: 2;
+  color: white;
+}
+footer a {
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  background-color: #333;
+}
+.deltitel {
+  text-align: center;
+  margin: 1rem;
+}
 .product-container {
   display: flex;
   gap: 1rem;
 }
 
 .product-card {
-  padding: 1rem;
+  padding: 0.5rem;
   flex-grow: 1;
   flex-basis: 144px;
   display: flex;
@@ -62,7 +78,7 @@ footer aside a {
 }
 
 .product-card img {
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 2px 2px 8px #333;
   width: 100%;
@@ -84,4 +100,39 @@ footer aside a {
   padding: 0.5rem;
   color: #333;
   text-decoration: none;
+}
+.product-card1 p {
+  position: absolute;
+  bottom: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  text-align: center;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.product-card1 {
+  padding: 0.5rem;
+  flex-grow: 1;
+  flex-basis: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.product-card1 img {
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  width: 100%;
+}
+.product-card1 {
+  filter: blur(1rem);
+}
+
+.product-card1:hover {
+  filter: blur(0rem);
 }
