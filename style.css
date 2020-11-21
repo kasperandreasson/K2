@@ -6,13 +6,22 @@
 .bakgrundbild img {
   width: 100%;
   padding: 5rem;
-  border-radius: 10px;
 }
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
 }
-
+.text {
+  padding: 5rem;
+  text-align: center;
+}
+.text a {
+  text-decoration: none;
+  color: black;
+}
+.text a:hover {
+  background-color: grey;
+}
 header {
   height: 5rem;
   display: grid;
@@ -33,6 +42,15 @@ header a {
   padding: 0.5rem;
   color: black;
   text-decoration: none;
+}
+.coola {
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+.coola:hover {
+  background-color: antiquewhite;
 }
 header a:hover {
   background-color: antiquewhite;
@@ -101,6 +119,17 @@ footer a:hover {
   color: #333;
   text-decoration: none;
 }
+.product-card a:hover {
+  position: absolute;
+  bottom: 0.5rem;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  text-align: center;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
 .product-card1 p {
   position: absolute;
   bottom: 0.5rem;
@@ -112,7 +141,17 @@ footer a:hover {
   color: #333;
   text-decoration: none;
 }
-
+.product-card1 a {
+  position: absolute;
+  bottom: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  text-align: center;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
 .product-card1 {
   padding: 0.5rem;
   flex-grow: 1;
@@ -135,4 +174,48 @@ footer a:hover {
 
 .product-card1:hover {
   filter: blur(0rem);
+}
+
+.sizeselect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.sizeselect select {
+  grid-column: 5;
+}
+.sizeselect a {
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+  grid-column: 1;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+}
+.buysection {
+  display: flex;
+  padding: 5rem;
+}
+.buysection1 {
+  display: flex;
+}
+.buysectionitem {
+  padding: 0.5rem;
+  flex-grow: 1;
+  flex-basis: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.grid > span {
+  padding: 8px 4px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
